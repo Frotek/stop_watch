@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stopwatch project</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="container center">
+        <div style="padding-top: 5%;" class="row"></div>
+      <div class="row">
+        <!-- Czas -->
+        <div style="background: none;" class="col s3 offset-s4">
+          <span id="hours">HH</span>
+          <span id="hours">:</span>
+          <span id="minutes">MM</span>
+          <span id="hours">:</span>
+          <span id="seconds">SS</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- start/stop -->
+        <div class="col s3 offset-s4">
+          <button class="btn waves-effect waves-light" id="start">Start</span>
+          <button class="btn waves-effect waves-light" id="stop">Stop</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Reset -->
+        <div class="col s3 offset-s4">
+            <button class="btn waves-effect waves-light" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/babel" src="./scripts/variables.js"></script>
+    <script type="text/babel" src="./scripts/functions.js"></script>
+    <script type="text/babel" src="./app.js"></script>
+  </body>
+</html>
